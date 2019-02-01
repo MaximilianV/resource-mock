@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
+var cors = require('cors')
 var resources = require('./routes/resources.js')
+
+app.use(cors());
 
 app.get('/', function (req, res) {
   res.send('Look at /resources!');
