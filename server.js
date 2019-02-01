@@ -8,6 +8,6 @@ app.get('/', function (req, res) {
 
 app.use('/resources', resources);
 
-app.listen(3000, function () {
-  console.log('Resource-mock listening on port 3000!');
+app.listen(3500, function () {
+  console.log('Resource-mock listening on port 3500!');
 });
