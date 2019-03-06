@@ -7,7 +7,9 @@ router.get('/', function (req, res) {
         {
             "resources": [
                 { "id": 0, "name": "bed" },
-                { "id": 1, "name": "patient" }
+                { "id": 1, "name": "patient" },
+                { "id": 2, "name": "parcel" },
+                { "id": 3, "name": "recipient data" }
             ]
         }
     );
@@ -33,6 +35,28 @@ router.get('/:resource_id', function (req, res) {
                     "attributes": [
                         { "id": 0, "name": "Name", "type": "string" },
                         { "id": 1, "name": "DaysOfStay", "type": "integer" }
+                    ]
+                }
+            )
+            return;
+        case "2":
+            res.json(
+                {
+                    "attributes": [
+                        { "id": 0, "name": "Recipient", "type": "string" },
+                        { "id": 1, "name": "Address", "type": "string" },
+                        { "id": 2, "name": "Estimated Date of Delivery", "type": "date" }
+                    ]
+                }
+            )
+            return;
+        case "3":
+            res.json(
+                {
+                    "attributes": [
+                        { "id": 0, "name": "Name", "type": "string" },
+                        { "id": 1, "name": "Address", "type": "string" },
+                        { "id": 2, "name": "Phonenumber", "type": "string" }
                     ]
                 }
             )
