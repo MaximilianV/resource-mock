@@ -1,0 +1,143 @@
+{
+    "resources": [
+        {
+            "id": 0,
+            "name": "bed",
+            "attributes": [
+                {
+                    "id": 0,
+                    "name": "Department",
+                    "type": "string"
+                },
+                {
+                    "id": 1,
+                    "name": "Room",
+                    "type": "integer"
+                },
+                {
+                    "id": 2,
+                    "name": "Occupied",
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "patient",
+            "attributes": [
+                {
+                    "id": 0,
+                    "name": "Name",
+                    "type": "string"
+                },
+                {
+                    "id": 1,
+                    "name": "DaysOfStay",
+                    "type": "integer"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "parcel",
+            "attributes": [
+                {
+                    "id": 0,
+                    "name": "Recipient",
+                    "type": "string"
+                },
+                {
+                    "id": 1,
+                    "name": "Address",
+                    "type": "string"
+                },
+                {
+                    "id": 2,
+                    "name": "Estimated Date of Delivery",
+                    "type": "date"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "recipient data",
+            "attributes": [
+                {
+                    "id": 0,
+                    "name": "Name",
+                    "type": "string"
+                },
+                {
+                    "id": 1,
+                    "name": "Address",
+                    "type": "string"
+                },
+                {
+                    "id": 2,
+                    "name": "Phonenumber",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "problems": [
+        {
+            "id": 0,
+            "name": "VehicleRoutingProblem"
+        },
+        {
+            "id": 1,
+            "name": "TimeWindowProblem"
+        }
+    ],
+    "methods": [
+        {
+            "id": 0,
+            "name": "InsertionMethod",
+            "problemId": 0,
+            "inputs": [
+                {
+                    "id": 0,
+                    "name": "parcel"
+                },
+                {
+                    "id": 1,
+                    "parcel": "recipient data"
+                }
+            ],
+            "outputs": [
+                {
+                    "id": 0,
+                    "name": "parcel"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "TestMethod",
+            "problemId": 0,
+            "inputs": [
+                {
+                    "id": 0,
+                    "name": "parcel"
+                }
+            ],
+            "outputs": [
+                {
+                    "id": 0,
+                    "name": "parcel"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Test1Method",
+            "problemId": 1
+        },
+        {
+            "id": 3,
+            "name": "Test2Method",
+            "problemId": 1
+        }
+    ]
+}
