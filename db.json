@@ -1,4 +1,7 @@
 {
+    "server": {
+        "name": "FleetManager"
+    },
     "resources": [
         {
             "id": 0,
@@ -32,7 +35,7 @@
                 },
                 {
                     "id": 1,
-                    "name": "DaysOfStay",
+                    "name": "Days of Stay",
                     "type": "integer"
                 }
             ]
@@ -54,7 +57,7 @@
                 {
                     "id": 2,
                     "name": "Estimated Date of Delivery",
-                    "type": "date"
+                    "type": "integer"
                 }
             ]
         },
@@ -114,7 +117,7 @@
         },
         {
             "id": 1,
-            "name": "TestMethod",
+            "name": "Tour Computation",
             "problemId": 0,
             "inputs": [
                 {
