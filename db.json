@@ -100,17 +100,17 @@
             "problemId": 0,
             "inputs": [
                 {
-                    "id": 0,
+                    "id": 2,
                     "name": "parcel"
                 },
                 {
-                    "id": 1,
+                    "id": 3,
                     "parcel": "recipient data"
                 }
             ],
             "outputs": [
                 {
-                    "id": 0,
+                    "id": 2,
                     "name": "parcel"
                 }
             ]
@@ -121,13 +121,13 @@
             "problemId": 0,
             "inputs": [
                 {
-                    "id": 0,
+                    "id": 2,
                     "name": "parcel"
                 }
             ],
             "outputs": [
                 {
-                    "id": 0,
+                    "id": 2,
                     "name": "parcel"
                 }
             ]
